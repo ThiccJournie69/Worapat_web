@@ -1,0 +1,641 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('http://fonts.cdnfonts.com/css/billbreak');
+@import url('http://fonts.cdnfonts.com/css/2-lines');
+@import url('http://fonts.cdnfonts.com/css/moiser');
+@import url('http://fonts.cdnfonts.com/css/basica-v2012');
+@import url('http://fonts.cdnfonts.com/css/gtek-nova');
+
+.navbar-brand {
+    background: linear-gradient(90deg, #00dbde, #fc00ff);
+    font-size: 30px !important;
+    -webkit-background-clip: text;
+    /* font-weight: bold; */
+    -webkit-text-fill-color: transparent;
+  }
+
+.nav-item a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-right: 15px;
+    transition: all 0.5s;
+}
+
+.nav-item a:hover{
+    color: aqua;
+    outline: none;
+    border-color: #9ecaed;
+    text-shadow: 0 0 50px #7ac2fd;
+    transition: all 0.5s;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.nav-item a:focus{
+    color: aqua;
+    outline: none;
+    border-color: #9ecaed;
+    text-shadow: 0 0 50px #7ac2fd;
+    transition: all 0.5s;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+button {
+    transition: all 0.5s !important;
+}
+
+.search {
+    background-color: black !important;
+}
+
+.search:focus{
+    background-color: black !important;
+    color: white !important;
+    outline: none !important;
+    border-color: #9ecaed !important;
+    box-shadow: 0 0 10px #9ecaed !important;
+    transition: all 0.5s !important;
+}
+
+.bi-bag{
+    font-size: 20px;
+}
+
+
+.navbar-toggler{
+    font-size: 25px;
+    color: white;
+    margin-top: 13px;
+}
+
+.navbar-toggler:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+.col1 {
+    font-family: proxima-nova, sans-serif;
+
+}
+
+.audio-spectrum {
+    height: 30px;
+    display: flex;
+    /* align-items: flex-end; */
+    align-items: center;
+}
+
+.audio-spectrum div {
+    width: 6px;
+    height: 60px;
+    margin-right: 5px;
+    border-radius: 2px;
+    background-color: white;
+    animation: infinite linear equilizer;
+}
+
+@keyframes equilizer {
+    0%{
+        height: 15px;
+        background-color: aqua;
+    } 10%{
+        height: 30px;
+        background-color: rgb(255, 255, 255);
+    } 20%{
+        height: 15px;
+        background-color: rgb(255, 199, 239);
+    } 30%{
+        height: 25px;
+        background-color: rgb(255, 95, 223);
+    } 40%{
+        height: 40px;
+        background-color: rgb(255, 0, 162);
+    } 50%{
+        height: 20px;
+        background-color: rgb(164, 255, 250);
+    } 60%{
+        height: 15px;
+        background-color: rgb(118, 255, 253);
+    } 70%{
+        height: 30px;
+        background-color: rgb(0, 255, 229);
+    } 80%{
+        height: 24px;
+        background-color: rgb(220, 160, 255);
+    } 90%{
+        height: 40px;
+        background-color: rgb(226, 129, 255);
+    } 100%{
+        height: 35px;
+        background-color: rgb(221, 0, 255);
+    }
+}
+
+.audio-spectrum div:nth-child(1) {
+    animation-duration: 3.8s;
+}
+
+.audio-spectrum div:nth-child(2) {
+    animation-duration: 2.5s;
+}
+
+.audio-spectrum div:nth-child(3) {
+    animation-duration: 3s;
+}
+
+.audio-spectrum div:nth-child(4) {
+    animation-duration: 2s;
+}
+
+.audio-spectrum div:nth-child(5) {
+    animation-duration: 2.8s;
+}
+
+.audio-spectrum div:nth-child(6) {
+    animation-duration: 1.9s;
+}
+
+.audio-spectrum div:nth-child(7) {
+    animation-duration: 2.3s;
+}
+
+.audio-spectrum div:nth-child(8) {
+    animation-duration: 2.6s;
+}
+
+.audio-spectrum div:nth-child(9) {
+    animation-duration: 2.2s;
+}
+
+.audio-spectrum div:nth-child(10) {
+    animation-duration: 3.5s;
+}
+
+.audio-spectrum div:nth-child(11) {
+    animation-duration: 2.1s;
+}
+
+.audio-spectrum2 {
+    height: 30px;
+    display: flex;
+    /* align-items: flex-end; */
+    align-items: center;
+}
+
+.audio-spectrum2 div {
+    width: 1px;
+    height: 20px;
+    margin-right: 5px;
+    border-radius: 2px;
+    background-color: white;
+    animation: infinite linear equilizer2;
+}
+
+@keyframes equilizer2 {
+    0%{
+        height: 15px;
+        background-color: #A7D2CB;
+    } 10%{
+        height: 30px;
+        background-color: #A7D2CB;
+    } 20%{
+        height: 15px;
+        background-color:#F2D388;
+    } 30%{
+        height: 20px;
+        background-color: #F2D388;
+    } 40%{
+        height: 20px;
+        background-color: #C98474
+        ;
+    } 50%{
+        height: 20px;
+        background-color: #C98474
+        ;
+    } 60%{
+        height: 15px;
+        background-color: #C98474
+        ;
+    } 70%{
+        height: 15px;
+        background-color: #874C62;
+    } 80%{
+        height: 12px;
+        background-color: #874C62;
+    } 90%{
+        height: 28px;
+        background-color: #A7D2CB;
+    } 100%{
+        height: 17px;
+        background-color: #A7D2CB;
+    }
+}
+
+.audio-spectrum2 div:nth-child(1) {
+    animation-duration: 5s;
+}
+
+.audio-spectrum2 div:nth-child(2) {
+    animation-duration: 2.8s;
+}
+
+.audio-spectrum2 div:nth-child(3) {
+    animation-duration: 4s;
+}
+
+.audio-spectrum2 div:nth-child(4) {
+    animation-duration: 4.7s;
+}
+
+.audio-spectrum2 div:nth-child(5) {
+    animation-duration: 4.1s;
+}
+
+.audio-spectrum2 div:nth-child(6) {
+    animation-duration: 5s;
+}
+
+.audio-spectrum2 div:nth-child(7) {
+    animation-duration: 3.6s;
+}
+
+.audio-spectrum2 div:nth-child(8) {
+    animation-duration: 4s;
+}
+
+.audio-spectrum2 div:nth-child(9) {
+    animation-duration: 4.9s;
+}
+
+.audio-spectrum2 div:nth-child(10) {
+    animation-duration: 3.9s;
+}
+
+.audio-spectrum2 div:nth-child(11) {
+    animation-duration: 3.4s;
+}
+
+.quote{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.bt1 {
+    height: 45px;
+    width: 130px;
+    margin: 0 35px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background: rgb(0, 0, 0);
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-bottom: 50px; 
+    margin-top: 15px;
+    box-shadow: 0 8px 10px rgba(0, 225, 255, 0.152);
+    transition: box-shadow 0.3s ease,
+    background 0.3s ease,
+    transform 0.3s ease,
+    color 0.3s ease;
+    font-weight: bold;
+}
+
+.bt1:hover {
+    background-color: #6fe2ff;
+    transform: translateY(-4px);
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 15px 20px rgba(238, 0, 255, 0.23);
+}
+
+
+.h1 {
+    overflow: hidden;
+    text-align: center;
+   }
+   .h1:before,
+   .h1:after {
+    background-color: #333;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+   }
+   .h1:before {
+    right: 0.5em;
+    margin-left: -50%;
+   }
+   .h1:after {
+    left: 0.5em;
+    margin-right: -50%;
+   }
+
+.welcome{
+    background-color: #000000;
+    
+}
+
+.h2 {
+    overflow: hidden;
+    text-align: center;
+   }
+   .h2:before,
+   .h2:after {
+    background-color: #333;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+   }
+   .h2:before {
+    right: 0.5em;
+    margin-left: -50%;
+   }
+   .h2:after {
+    left: 0.5em;
+    margin-right: -50%;
+   }
+
+.welcome{
+    position:relative; bottom:20px;
+    background: transparent;
+}
+
+.hr1{
+        border: 0;
+        height: 2px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(255, 255, 255), rgba(0, 0, 0, 0));
+        position: relative;
+        top: 20px;
+}
+
+.welcome .card {
+    color: white;
+    border-color: white;
+    background: #000000;
+    border-radius: 0;
+    margin-bottom: 10px;
+    transition: all 0.5s;
+    margin-right: 10px;
+}
+
+.welcome .card:hover {
+    color: white;
+    border-color: white;
+    background: #000000;
+    border-radius: 0;
+    margin-bottom: 10px;
+    box-shadow: -4px -4px 25px 2px rgb(199, 139, 255), 4px 4px 25px 2px rgb(128, 16, 255);
+    transition: all 0.5s;
+}
+
+.welcome i {
+    font-size: 30px;
+    color: rgb(255, 255, 134);
+}
+
+.welcome h2{ 
+    font-weight: lighter;
+    padding: 10px 0px;
+}
+
+.product .card {
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    background: black;
+    color: white;
+}
+#diskk {
+    color: rgba(255, 255, 255, 0.459);
+    font-size: 70px;
+    position:relative; top:60px;
+}
+
+.head1 {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.card-body {
+    font-family: 'proxima-nova', sans-serif;
+
+}
+
+.h1_2 {
+    background: linear-gradient(90deg, #00dbde, #fc00ff, #ff006a, #8400ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300%;
+    letter-spacing: 5px;
+    animation: animate3 10s linear infinite;
+}
+
+@keyframes animate3 {
+    0% {
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+
+.h1_3 {
+    background: linear-gradient(90deg, #fcff55, #ffa600, #eb9bff, #ff00ea);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 90%;
+    letter-spacing: 5px;
+}
+
+.h1_4 {
+    background: linear-gradient(90deg, #00fff2, #ff0062, #f700ff, #00ff88);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 100%;
+    letter-spacing: 5px;
+}
+
+.h1_5 {
+    background: linear-gradient(90deg, #00dbde, #0066ff, #ff0095, #ff00d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 130%;
+    letter-spacing: 5px;
+}
+
+.h1_6 {
+    background: linear-gradient(90deg, #ffa600, #ff02e1, #00ff66, #fbff00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    letter-spacing: 5px;
+    animation: animate3 10s linear infinite;
+}
+
+.seller h5 {
+    color: white;
+}
+
+.seller p {
+    color: white;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    background: #ff00fc;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+footer .social_icon,
+footer .menu 
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+footer .social_icon li,
+footer .menu li {
+    list-style: none;
+}
+
+footer .social_icon li a,
+footer .menu li a{
+    font-size: 2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+footer .social_icon li a:hover {
+    transform: translateY(-10px);
+}
+
+footer .menu li a
+{
+    font-size: 1.2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+footer .menu li a:hover {
+    opacity: 1;
+}
+
+footer .p4 {
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    font-family: 'proxima-nova', sans-serif;
+}
+
+footer .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(./wave.png);
+    background-size: 1000px 100px;
+}
+
+footer .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+
+footer .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_02 4s linear infinite;
+}
+
+footer .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave_03 3s linear infinite;
+}
+
+footer .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave_04 3s linear infinite;
+}
+
+@keyframes animateWave 
+{
+    0% {
+        background-position-x: 1000px;
+    }
+    100% {
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animateWave_02
+{
+    0% {
+        background-position-x: 0px;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes animateWave_03
+{
+    0% {
+        background-position-x: 0px;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes animateWave_04
+{
+    0% {
+        background-position-x: 0px;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
